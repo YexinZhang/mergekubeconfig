@@ -1,5 +1,7 @@
 # merge kubeconfig
 合并同一目录下面的kubeconfig文件 为一个单独的文件
+核心思想就是扫描指定或者当前文件夹下面的kubeconfig文件， 将其解析到结构体中，在合并这些结构体
+
 
 直接go build merge.go
 
