@@ -116,7 +116,7 @@ func readfromdir() {
 	
 	// 存入slice
 	for _, f := range filelists {
-		filep := *x + f
+		filep := *x + "/" + f
 		yamlfile, err := os.Open(filep)
 		if err != nil {
 			fmt.Println(err)
